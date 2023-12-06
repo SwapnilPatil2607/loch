@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Icon } from "../../../components/Icon";
 
 const Card = styled.div`
   width: 189.7px;
@@ -31,13 +30,13 @@ const CardContent = styled.div`
   flex-direction: column;
   /* justify-content: end; */
   p {
-    margin:0;
+    margin: 0;
   }
 `;
 
 const SelectBox = styled.div`
   gap: 2.8px;
-  width: fit-content;
+  width: 66.4px;
   height: 19.6px;
   display: flex;
   padding: 4.2px;
@@ -47,24 +46,4 @@ const SelectBox = styled.div`
   align-items: center;
 `;
 
-const NotificationCard = ({ Message }) => {
-  return (
-    <Card>
-      <CardHeader>
-        <Icon name="bell" />
-        <Icon name="checkmark" />
-      </CardHeader>
-
-      <CardContent>
-        <p>'Notify me when any wallets move more than</p>
-        <SelectBox>
-          <p>something</p>
-          <Icon name="dropDown" />
-        </SelectBox>
-        <p>becomes active</p>
-      </CardContent>
-    </Card>
-  );
-};
-
-export { NotificationCard };
+export { Card, CardHeader, SelectBox,CardContent };
