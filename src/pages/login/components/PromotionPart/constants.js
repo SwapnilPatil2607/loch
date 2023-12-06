@@ -1,7 +1,7 @@
 const NotificationCardDummyData = [
-  { message: "", key: "random 1" },
-  { message: "", key: "random 2" },
-  { message: "", key: "random 3" },
+  {icon:'clock', message: "Notify me when any wallets move more than", key: "random 1" },
+  {icon:'barChart', message: "Notify me when any wallet dormant for", key: "random 2" },
+  {icon:'bell', message: "We’ll be sending notifications to you here", key: "random 3" },
 ];
 
 const ReviewCardDummyData = [

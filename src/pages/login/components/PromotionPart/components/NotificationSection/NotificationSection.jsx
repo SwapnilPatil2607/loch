@@ -18,10 +18,9 @@ const NotificationSection = () => {
           on-chain or when a dormant whale you care about becomes active.
         </Text>
       </InfoBox>
-
       <FlexBox gap="14px">
-        {NotificationCardDummyData.map(({ key }) => (
-          <NotificationCard key={key} />
+        {NotificationCardDummyData.map(({ key  ,message, icon }) => (
+          <NotificationCard key={key} message={message} icon={icon}  />
         ))}
       </FlexBox>
     </FlexBox>

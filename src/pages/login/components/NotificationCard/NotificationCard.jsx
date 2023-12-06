@@ -1,19 +1,19 @@
 import styled from "styled-components";
 import { Icon } from "../../../../components/Icon";
 import { Text } from "../../../../components/Text";
-import { Card, CardHeader, SelectBox ,CardContent} from "./Styles";
+import { Card, CardHeader, SelectBox, CardContent } from "./Styles";
 
-const NotificationCard = ({ Message }) => {
+const NotificationCard = ({ message, icon }) => {
   return (
     <Card>
       <CardHeader>
-        <Icon name="bell" />
+        <Icon name={icon} />
         <Icon name="checkmark" />
       </CardHeader>
 
       <CardContent>
         <Text type="small" color="#19191A">
-          Notify me when any wallets move more than
+          {message}
         </Text>
         <SelectBox>
           <Text type="verySmall" color="#19191A">

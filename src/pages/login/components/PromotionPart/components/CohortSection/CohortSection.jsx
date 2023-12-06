@@ -8,7 +8,7 @@ const CohortSection = () => {
     <FlexBox gap="57px">
       <Cohort />
 
-      <InfoBox textAlign="end" align="end">
+      <InfoBox textalign="end" align="end">
         <Icon name="eye" />
 
         <Text type="H4" color="#F2F2F2">
