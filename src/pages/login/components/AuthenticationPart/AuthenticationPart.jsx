@@ -6,8 +6,7 @@ const Container = styled.div`
   background: #fff;
   box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 0.12),
     0px 8px 22px -6px rgba(24, 39, 75, 0.12);
-  height: 100vh;
- 
+  height: 100%;
   width:40%;
 `;
 

@@ -1,14 +1,18 @@
 import styled from "styled-components";
 
-export const Text = ({ type, color, children }) => {
+export const Text = ({ type, color, children, opacity }) => {
   return (
     <>
       {
         {
           small: <SmallText color={color}>{children}</SmallText>,
           verySmall: <VerySmallText color={color}>{children}</VerySmallText>,
-          medium: <MediumText color={color}>{children} </MediumText>,
-          H4:<H4 color={color}>{children}</H4>
+          medium: (
+            <MediumText opacity={opacity} color={color}>
+              {children}{" "}
+            </MediumText>
+          ),
+          H4: <H4 color={color}>{children}</H4>,
         }[type]
       }
     </>
@@ -45,6 +49,7 @@ const MediumText = styled.p`
   color: ${({ color }) => color};
   font-size: 16px;
   font-weight: ${({ bold }) => (bold ? 600 : 500)};
+  opacity: ${({ opacity }) => opacity};
   line-height: 19.2px;
 `;
 

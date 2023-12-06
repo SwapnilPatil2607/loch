@@ -10,7 +10,7 @@ const PageFlex = styled.div`
     rgba(0, 0, 0, 0) 100%
   );
   display: flex;
- 
+ height:100vh;
 `;
 
 const Login = () => {
