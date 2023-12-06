@@ -3,7 +3,14 @@ import styled from "styled-components";
 const FlexBox = styled.div`
   display: flex;
   gap: ${({ gap }) => gap};
-  align-items:end;
+  align-items: end;
+  text-align: end;
+`;
+
+const Divider = styled.div`
+  height: 1px;
+  background: rgba(229, 229, 230, 0.5);
+  margin: 20px 0px;
 `;
 
 const InfoBox = styled.div`
@@ -16,4 +23,4 @@ const InfoBox = styled.div`
   text-align: ${({ textAlign }) => textAlign};
 `;
 
-export { FlexBox, InfoBox };
+export { FlexBox, InfoBox,Divider };

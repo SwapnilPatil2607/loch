@@ -12,7 +12,10 @@ export const Text = ({ type, color, children, opacity }) => {
               {children}{" "}
             </MediumText>
           ),
+          label: <Label color={color}>{children}</Label>,
           H4: <H4 color={color}>{children}</H4>,
+          H5: <H5 color={color}>{children}</H5>,
+          H3: <H3 color={color}>{children}</H3>,
         }[type]
       }
     </>
@@ -65,5 +68,44 @@ const H4 = styled.p`
   font-size: 31px;
   font-weight: 500;
   line-height: 120%; /* 37.2px */
+  text-align: ${({ align }) => align};
+`;
+
+const H5 = styled.p`
+  margin: 0;
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto+Condensed:wght@600&display=swap");
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  color: ${({ color }) => color};
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 30px */
+  text-align: ${({ align }) => align};
+`;
+
+const H3 = styled.p`
+  margin: 0;
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto+Condensed:wght@600&display=swap");
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  color: ${({ color }) => color};
+  font-size: 39px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 46.8px */
+  text-align: ${({ align }) => align};
+`;
+
+const Label = styled.p`
+  margin: 0;
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Roboto+Condensed:wght@600&display=swap");
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  color: ${({ color }) => color};
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 19.2px */
   text-align: ${({ align }) => align};
 `;

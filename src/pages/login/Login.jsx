@@ -9,10 +9,10 @@ const Container = styled.div`
     #2f15d0 64.58%,
     rgba(0, 0, 0, 0) 100%
   );
-  
-  min-height:100vh;
+  min-height: 100vh;
   max-height: fit-content;
-  position:relative;
+  position: relative;
+  overflow:hidden;
 `;
 
 const Login = () => {
@@ -20,6 +20,7 @@ const Login = () => {
     <Container>
       <PromotionPart />
       <AuthenticationPart />
+     
     </Container>
   );
 };
