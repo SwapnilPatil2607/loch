@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Card = styled.div`
-  width: 189.7px;
+  min-width: 189.7px;
   height: 171.5px;
   padding: 14px;
   border-radius: 8.4px;

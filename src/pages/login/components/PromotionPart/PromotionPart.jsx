@@ -1,10 +1,7 @@
 import styled from "styled-components";
-import { Icon } from "../../../../components/Icon";
-import { Text } from "../../../../components/Text";
-import { NotificationCard } from "../NotificationCard/NotificationCard";
-import { TestimonialCard } from "../TestimonialCard/TestimonialCard";
-import { Cohort } from "./Cohort";
-import { NotificationCardDummyData } from "./constants";
+import { CohortSection } from "./components/CohortSection/CohortSection";
+import { NotificationSection } from "./components/NotificationSection/NotificationSection";
+import { TestimonialSection } from "./components/TestimonialSection/TestimonialSection";
 
 const Container = styled.div`
   padding-top: 86px;
@@ -14,44 +11,14 @@ const Container = styled.div`
   overflow: hidden;
 `;
 
-const GetNotifiedCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  min-width: 322px;
-`;
-
-const FlexBox = styled.div`
-  display: flex;
-  gap: ${({ gap }) => gap};
-`;
-
 const PromotionPart = ({ chilren }) => {
   return (
     <Container>
-      <FlexBox gap="57px">
-        <GetNotifiedCard>
-          <Icon name="whiteBell" />
+      <NotificationSection />
 
-          <Text type="H4" color="#F2F2F2">
-            Get notified when a highly correlated whale makes a move
-          </Text>
-          <Text opacity={0.7} type="medium" color="#F2F2F2">
-            Find out when a certain whale moves more than any preset amount
-            on-chain or when a dormant whale you care about becomes active.
-          </Text>
-        </GetNotifiedCard>
+      <CohortSection />
 
-        <FlexBox gap="14px">
-          {NotificationCardDummyData.map(({ key }) => (
-            <NotificationCard key={key} />
-          ))}
-        </FlexBox>
-      </FlexBox>
-
-      <FlexBox gap="57px">
-        <Cohort/>
-      </FlexBox>
+      <TestimonialSection />
     </Container>
   );
 };

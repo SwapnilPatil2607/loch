@@ -28,6 +28,7 @@ const SmallText = styled.p`
   font-size: 11.2px;
   line-height: 13.44px;
   color: ${({ color }) => color};
+  text-align: ${({ align }) => align};
 `;
 
 const VerySmallText = styled.p`
@@ -39,6 +40,7 @@ const VerySmallText = styled.p`
   font-size: 9.1px;
   line-height: 10.92px;
   color: ${({ color }) => color};
+  text-align: ${({ align }) => align};
 `;
 
 const MediumText = styled.p`
@@ -48,6 +50,7 @@ const MediumText = styled.p`
   font-family: "Roboto Condensed", sans-serif;
   color: ${({ color }) => color};
   font-size: 16px;
+  text-align: ${({ align }) => align};
   font-weight: ${({ bold }) => (bold ? 600 : 500)};
   opacity: ${({ opacity }) => opacity};
   line-height: 19.2px;
@@ -62,4 +65,5 @@ const H4 = styled.p`
   font-size: 31px;
   font-weight: 500;
   line-height: 120%; /* 37.2px */
+  text-align: ${({ align }) => align};
 `;

@@ -9,8 +9,10 @@ const PageFlex = styled.div`
     #2f15d0 64.58%,
     rgba(0, 0, 0, 0) 100%
   );
+  min-height:100vh;
   display: flex;
- height:100vh;
+  height: fit-content;
+  position:relative;
 `;
 
 const Login = () => {

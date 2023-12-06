@@ -1,21 +1,17 @@
 import styled from "styled-components";
-import { NotificationCard } from "../NotificationCard/NotificationCard";
-import { TestimonialCard } from "../TestimonialCard/TestimonialCard";
 
 const Container = styled.div`
   background: #fff;
-  box-shadow: 0px 14px 64px -4px rgba(24, 39, 75, 0.12),
-    0px 8px 22px -6px rgba(24, 39, 75, 0.12);
+  box-shadow: 0 45px 65px rgba(0,0,0,0.50), 0 35px 22px rgba(0,0,0,0.16);
   height: 100%;
-  width:40%;
+  width: 640px;
+  position:absolute;
+  top:0px;
+  right:0px
 `;
 
-
 const AuthenticationPart = ({ chilren }) => {
-  return <Container>
-
-    
-  </Container>;
+  return <Container></Container>;
 };
 
 export { AuthenticationPart };
