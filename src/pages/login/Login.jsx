@@ -1,12 +1,24 @@
-import { NotificationCard } from "./components/NotificationCard/NotificationCard";
-import { TestimonialCard } from "./components/TestimonialCard/TestimonialCard";
+import { AuthenticationPart } from "./components/AuthenticationPart/AuthenticationPart";
+import { PromotionPart } from "./components/PromotionPart/PromotionPart";
+import styled from "styled-components";
+
+const PageFlex = styled.div`
+  background: radial-gradient(
+    92.19% 89.74% at 32.27% 91.27%,
+    rgba(31, 169, 17, 0.81) 17.21%,
+    #2f15d0 64.58%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  display: flex;
+ 
+`;
 
 const Login = () => {
   return (
-    <>
-      <NotificationCard />
-      <TestimonialCard />
-    </>
+    <PageFlex>
+      <PromotionPart />
+      <AuthenticationPart />
+    </PageFlex>
   );
 };
 
