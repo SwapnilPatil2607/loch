@@ -3,9 +3,6 @@ import styled from "styled-components";
 const FlexBox = styled.div`
   display: flex;
   gap: ${({ gap }) => gap};
-  justify-content: space-between;
-  width: 100%;
-  overflow: hidden;
 `;
 
 const InfoBox = styled.div`

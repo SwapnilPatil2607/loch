@@ -7,7 +7,8 @@ const Container = styled.div`
   width: 640px;
   position:absolute;
   top:0px;
-  right:0px
+  right:0px;
+  /* display:none; */
 `;
 
 const AuthenticationPart = ({ chilren }) => {

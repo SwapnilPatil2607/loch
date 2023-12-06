@@ -1,6 +1,9 @@
 {
-    "compilerOptions": {
-        "baseUrl": "."
-    },
-    "include": ["src"]
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["src"],
+  "resolve": {
+    "extensions": [".js", ".jsx"]
+  }
 }
